@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Happy Birthday, Mentor</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Manrope:wght@400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <canvas id="sparks" aria-hidden="true"></canvas>
+
+    <section id="hero">
+      <div class="frame"><img src="img1.jpg" alt="Portrait of my mentor" /></div>
+      <div class="intro-block">
+        <h1>Happy Birthday, Mentor</h1>
+        <p class="sub">A few words of gratitude, just for you.</p>
+        <button id="open">Open your message</button>
+      </div>
+    </section>
+
+    <div id="content">
+      <section id="letter">
+        <div class="card">
+          <h2 class="reveal">Happy birthday, Mentor! 🎉</h2>
+          <p class="reveal">I wish you all the best in your new age. I pray that God blesses you abundantly, protects you, and provides for all your needs.</p>
+          <p class="reveal">I'd also like to thank you for everything you've been doing for me — your teachings, the tasks, and everything I've learned from you about wealth, honor, communication, relationships, marriage, business, and so much more. The list is honestly long.</p>
+          <p class="reveal">This mentorship has been one of the best things that has happened to me this year, and I genuinely appreciate all the effort you've put into helping and guiding me.</p>
+          <p class="reveal">Thank you for believing in me, teaching me, and giving me the opportunity to learn and grow. I'm truly grateful.</p>
+          <p class="reveal">Happy birthday once again, sir. 🎉❤️</p>
+        </div>
+        <p id="foot" class="reveal">With gratitude, always.</p>
+      </section>
+
+      <section id="since">
+        <h2 class="section-title">Time since you became my mentor</h2>
+        <div class="counter">
+          <div class="unit"><span id="c-y">0</span><small>years</small></div>
+          <div class="unit"><span id="c-mo">0</span><small>months</small></div>
+          <div class="unit"><span id="c-d">0</span><small>days</small></div>
+          <div class="unit"><span id="c-h">0</span><small>hours</small></div>
+          <div class="unit"><span id="c-mi">0</span><small>minutes</small></div>
+          <div class="unit"><span id="c-s">0</span><small>seconds</small></div>
+        </div>
+        <p class="note">...and counting. </p>
+      </section>
+
+      <section class="lessons">
+        <h2 class="section-title">Lessons I learned from you</h2>
+        <div class="lessons-list"></div>
+      </section>
+
+      <section class="gallery">
+        <h2 class="section-title">Images I stole from your page</h2>
+        <p class="note">Don't worry sir, I'll return them.</p>
+        <div class="carousel">
+          <div class="group">
+            <img src="img2.jpg" alt="" loading="lazy" />
+            <img src="img3.jpg" alt="" loading="lazy" />
+            <img src="img4.jpg" alt="" loading="lazy" />
+            <img src="img5.jpg" alt="" loading="lazy" />
+            <img src="img6.jpg" alt="" loading="lazy" />
+            <img src="img7.jpg" alt="" loading="lazy" />
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div id="modal" role="dialog" aria-modal="true" aria-labelledby="m-title">
+      <div class="card modal-card">
+        <button class="close" aria-label="Close">×</button>
+        <h2 id="m-title"></h2>
+        <div id="m-points"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
